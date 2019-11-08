@@ -2,15 +2,15 @@
   <main class="container">
     <div class="field">
       <label class="label">Enter background color hex:</label>
-        <div class="control">
-          <input
-            class="input"
-            type="text"
-            placeholder="color hex"
-            v-model="bg"
-            @input="updateBg"
-          >
-        </div>
+      <div class="control">
+        <input
+          class="input"
+          type="text"
+          placeholder="color hex"
+          v-model="bg"
+          @input="updateBg"
+        >
+      </div>
     </div>
     <div class="field">
         <label class="label">Enter your iframe ID:</label>
@@ -23,7 +23,6 @@
           >
         </div>
     </div>
-    <p v-if="id">Now showing iframe for ID:<br>{{ id }}</p>
     <template v-if="id">
       <script :id='id' :src='`https://go.sunrising.tech/${id}/frm.js`'></script>
     </template>
@@ -60,6 +59,10 @@ html {
 }
 main {
   padding: 1em;
-  margin: 1em;
+}
+.field {
+  width: 30vw;
+  min-width: 300px;
+  margin: auto;
 }
 </style>
