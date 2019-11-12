@@ -36,8 +36,9 @@
           </div>
       </div>
     </div>
-    <div v-if="url" :width="width">
-      <script :id="url.match(/(SA-)\w+/g)" :src="url"></script>
+    <div :width="width">
+      <!-- <script :id="url.match(/(SA-)\w+/g)" :src="url"></script> -->
+      <script id="SA-NA1PVPYNKCAJZ" src="https://sunrise-go-feature-sn-505-legal-popups-advxqrwbca-uc.a.run.app/SA-NA1PVPYNKCAJZ/frm.js"></script>
     </div>
   </main>
 </template>
