@@ -36,7 +36,9 @@
           </div>
       </div>
     </div>
-    <script v-if="url" :id="url.match(/(SA-)\w+/g)" :width="width" :src="url"></script>
+    <div v-if="url" :width="width">
+      <script :id="url.match(/(SA-)\w+/g)" :src="url"></script>
+    </div>
   </main>
 </template>
 
