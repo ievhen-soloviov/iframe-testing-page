@@ -1,31 +1,42 @@
 <template>
   <main class="container">
-    <div class="field">
-      <label class="label">Enter background color hex:</label>
-      <div class="control">
-        <input
-          class="input"
-          type="text"
-          placeholder="color hex"
-          v-model="bg"
-          @input="updateBg"
-        >
-      </div>
-    </div>
-    <div class="field">
-        <label class="label">Enter your iframe ID:</label>
+    <div class="columns">
+      <div class="column field">
+        <label class="label">Enter background color hex:</label>
         <div class="control">
           <input
             class="input"
             type="text"
-            placeholder="iframe ID"
-            v-model="id"
+            placeholder="color hex"
+            v-model="bg"
+            @input="updateBg"
           >
         </div>
+      </div>
+      <div class="column field">
+          <label class="label">Enter your iframe URL:</label>
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              placeholder="iframe URL"
+              v-model="url"
+            >
+          </div>
+      </div>
+      <div class="column field">
+          <label class="label">Enter iframe container width:</label>
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              placeholder="iframe width"
+              v-model="width"
+            >
+          </div>
+      </div>
     </div>
-    <template v-if="id">
-      <script :id='id' :src='`https://go.sunrising.tech/${id}/frm.js`'></script>
-    </template>
+    <script v-if="url" :id="url.match(/(SA-)\w+/g)" :width="width" :src="url"></script>
   </main>
 </template>
 
@@ -33,8 +44,9 @@
 export default {
   data() {
     return {
-      id: null,
-      bg: null
+      url: null,
+      bg: null,
+      width: '800px'
     }
   },
   methods: {
@@ -55,9 +67,7 @@ html {
 main {
   padding: 1em;
 }
-.field {
-  width: 30vw;
-  min-width: 300px;
+.iframe-container {
   margin: auto;
 }
 </style>
