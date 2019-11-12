@@ -13,7 +13,7 @@
           >
         </div>
       </div>
-      <div class="column field">
+      <!-- <div class="column field">
           <label class="label">Enter your iframe URL:</label>
           <div class="control">
             <input
@@ -23,7 +23,7 @@
               v-model="url"
             >
           </div>
-      </div>
+      </div> -->
       <div class="column field">
           <label class="label">Enter iframe container width:</label>
           <div class="control">
@@ -46,7 +46,7 @@
 export default {
   data() {
     return {
-      url: null,
+      url: 'https://sunrise-go-feature-sn-505-legal-popups-advxqrwbca-uc.a.run.app/SA-NA1PVPYNKCAJZ/frm.js',
       bg: null,
       width: '800px'
     }
