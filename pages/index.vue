@@ -36,7 +36,7 @@
           </div>
       </div>
     </div>
-    <div :width="width" class="iframe-container">
+    <div class="iframe-container">
       <!-- <script :id="url.match(/(SA-)\w+/g)" :src="url"></script> -->
       <script id="SA-NA1PVPYNKCAJZ" src="https://sunrise-go-feature-sn-506-essay-popup-advxqrwbca-uc.a.run.app/SA-NA1PVPYNKCAJZ/frm.js"></script>
     </div>
@@ -69,12 +69,5 @@ html {
 }
 main {
   padding: 1em;
-}
-.iframe-container {
-  margin: auto;
-  height: 1000px;
-}
-.iframe-container > iframe {
-  height: 100%;
 }
 </style>
