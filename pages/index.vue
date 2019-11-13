@@ -38,7 +38,7 @@
     </div>
     <div :width="width">
       <!-- <script :id="url.match(/(SA-)\w+/g)" :src="url"></script> -->
-      <script id="SA-NA1PVPYNKCAJZ" src="https://sunrise-go-feature-sn-506-essay-popup-advxqrwbca-uc.a.run.app/SA-NA1PVPYNKCAJZ/frm"></script>
+      <script id="SA-NA1PVPYNKCAJZ" src="https://sunrise-go-feature-sn-506-essay-popup-advxqrwbca-uc.a.run.app/SA-NA1PVPYNKCAJZ/frm.js"></script>
     </div>
   </main>
 </template>
