@@ -13,7 +13,7 @@
           >
         </div>
       </div>
-      <!-- <div class="column field">
+      <div class="column field">
           <label class="label">Enter your iframe URL:</label>
           <div class="control">
             <input
@@ -23,8 +23,8 @@
               v-model="url"
             >
           </div>
-      </div> -->
-      <div class="column field">
+      </div>
+      <!-- <div class="column field">
           <label class="label">Enter iframe container width:</label>
           <div class="control">
             <input
@@ -34,11 +34,11 @@
               v-model="width"
             >
           </div>
-      </div>
+      </div> -->
     </div>
-    <div class="iframe-container">
-      <!-- <script :id="url.match(/(SA-)\w+/g)" :src="url"></script> -->
-      <script id="SA-NA1PVPYNKCAJZ" src="https://sunrise-go-feature-sn-506-essay-popup-advxqrwbca-uc.a.run.app/SA-NA1PVPYNKCAJZ/frm.js"></script>
+    <div v-if="url" class="iframe-container">
+      <script :id="url.match(/(SA-)\w+/g)" :src="url"></script>
+      <!-- <script id="SA-NA1PVPYNKCAJZ" src="https://sunrise-go-feature-sn-506-essay-popup-advxqrwbca-uc.a.run.app/SA-NA1PVPYNKCAJZ/frm.js"></script> -->
     </div>
   </main>
 </template>
@@ -47,9 +47,9 @@
 export default {
   data() {
     return {
-      url: 'https://sunrise-go-feature-sn-506-essay-popup-advxqrwbca-uc.a.run.app/SA-NA1PVPYNKCAJZ/frm',
+      url: null,
       bg: null,
-      width: '800px'
+      // width: '800px'
     }
   },
   methods: {
