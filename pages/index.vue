@@ -71,6 +71,6 @@ main {
   padding: 1em;
 }
 .iframe-container {
-  height: auto;
+  height: 1000px;
 }
 </style>
