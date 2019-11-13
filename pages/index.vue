@@ -73,4 +73,7 @@ main {
 .iframe-container {
   height: 1000px;
 }
+.iframe-container > iframe {
+  height: 100%;
+}
 </style>
