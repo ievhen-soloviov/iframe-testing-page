@@ -70,4 +70,7 @@ html {
 main {
   padding: 1em;
 }
+.iframe-container {
+  height: auto;
+}
 </style>
