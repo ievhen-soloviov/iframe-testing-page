@@ -41,7 +41,7 @@
       </div>
     </form>
     <div v-if="url" class="iframe-container">
-      <script :id="iframeID(url)" :src="url" />
+      <script :id="iframeID(url)" :src="url" @load="loading = false" />
       <!-- <script id="SA-NA1PVPYNKCAJZ" src="https://sunrise-go-feature-sn-506-essay-popup-advxqrwbca-uc.a.run.app/SA-NA1PVPYNKCAJZ/frm.js"></script> -->
     </div>
   </main>
@@ -61,10 +61,8 @@ export default {
       document.documentElement.style.setProperty('--bg-color', this.bg);
     },
     generate() {
-      // console.log(this.$refs.url);
       this.url = this.$refs.url.value;
       this.loading = true;
-      document.getElementById(iframeID(this.url)).onload = () => this.loading = false;
     },
     iframeID(url) {
       url.match(/(SA-)\w+/g);
