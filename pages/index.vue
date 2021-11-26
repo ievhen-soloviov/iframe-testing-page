@@ -1,6 +1,10 @@
 <template>
   <main class="container">
     <section class="content">
+      <div class="has-text-centered mb-1">
+        <nuxt-link to="/tracking" class="button is-primary is-narrow">Tracking Page</nuxt-link>
+      </div>
+
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/1/10/Mont_Saint_Michel_bordercropped.jpg"
         alt="Normandy"
@@ -61,7 +65,7 @@
             >
           </div>
       </div> -->
-      <div class="column is-12">
+      <div class="column is-12 has-text-centered">
         <button
           class="button is-primary is-rounded"
           :class="{ 'is-loading': loading }"
@@ -101,7 +105,7 @@ export default {
       this.loading = true;
     },
     iframeID(url) {
-      url.match(/(SA-)\w+/g);
+      return url.match(/(SA-)\w+/g);
     },
     onLoad() {
       this.loading = false;
@@ -119,10 +123,6 @@ html {
 }
 main {
   padding: 1em;
-}
-.button {
-  display: flex;
-  margin: auto;
 }
 p:nth-child(1) img {
   float: left;
