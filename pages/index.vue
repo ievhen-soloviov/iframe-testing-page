@@ -2,7 +2,7 @@
   <main class="container">
     <section class="content">
       <div class="has-text-centered mb-1">
-        <nuxt-link to="/tracking" class="button is-primary is-narrow">Tracking Page</nuxt-link>
+        <a href="/tracking" class="button is-primary is-narrow">Tracking Page</a>
       </div>
 
       <img
