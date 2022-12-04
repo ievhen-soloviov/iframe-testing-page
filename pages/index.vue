@@ -9,6 +9,10 @@
         <a href="/verify" class="button is-primary is-narrow">Verify Goal</a>
       </div>
 
+      <div class="has-text-centered mb-1">
+        <a href="/visit" class="button is-primary is-narrow">Visit</a>
+      </div>
+
       <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Mont_Saint_Michel_bordercropped.jpg" alt="Normandy">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
